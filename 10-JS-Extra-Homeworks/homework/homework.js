@@ -10,6 +10,13 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  //.entry es la forma mas facil ---> es un metodo de los objetos
+  //tambien podes separar los keys de los values
+  //con un bucle anidado recorremos ambos
+  //agregamos que i siga iterando fuera del bucle asi no se queda estancado iterando i sobre j en todas las posibilidades de j
+
+  return Object.entries(objeto);
+
 }
 
 
@@ -18,6 +25,9 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  //bucle for con hasOwnProperty
+var obj = {}
+
 }
 
 
@@ -26,6 +36,7 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  //.split
 }
 
 
@@ -35,6 +46,7 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  //.split(' ') con separacion toma un string que esta separado por un espacio: the space.split(' ') === the[0] space [1]
 } 
 
 
